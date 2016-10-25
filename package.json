@@ -20,7 +20,7 @@
     "test:coverage": "babel-node ./node_modules/karma/bin/karma start ./build/karma.conf.js --reporters mocha,coverage",
     "test:coveralls": "npm test -- --reporters mocha,coverage,coveralls",
     "test:watch": "npm test -- --singleRun=false --reporters mocha",
-    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib"
+    "prepublish": "NODE_ENV='production'node_modules/babel-cli/bin/babel.js src --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -83,9 +83,9 @@
     "mocha": "^3.1.0",
     "node-sass": "^3.5.3",
     "phantomjs-prebuilt": "^2.1.7",
-    "react": "15.0.0-rc.2",
-    "react-addons-test-utils": "15.0.0-rc.2",
-    "react-dom": "15.0.0-rc.2",
+    "react": "15.3.2",
+    "react-addons-test-utils": "15.3.2",
+    "react-dom": "15.3.2",
     "react-redux": "^4.4.5",
     "reapop-theme-wybo": "^0.4.0",
     "redux": "^3.5.2",
